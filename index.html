@@ -11,20 +11,107 @@
     <title>Test Done from Labtop</title>
   </head>
   <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <span style="font-size: 30px; cursor: pointer;" onclick="toggleNav()"
+        >&#9776;</span
+      >
+      <a class="navbar-brand" href="index.html"
+        ><img src="images/brand-logo.png" class="brand-logo" alt="brand-logo"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item dropdown ml-4  active">
+            <a
+              class="nav-link "
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              الرئيسية
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right animated fadeIn"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="#news">الأخبار</a>
+              <a class="dropdown-item" href="#notifications">تنويهات و إعلانات</a>
+              <a class="dropdown-item" href="#activities">أنشطة المعهد</a>
+              <a class="dropdown-item" href="#videos">الصور والفيدوهات</a>
+              <a class="dropdown-item" href="#links">روابط ذات صلة</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown ml-4">
+            <a
+              class="nav-link "
+              href="index.html"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              من نحن
+            </a>
+            <div
+              class="dropdown-menu dropdown-menu-right animated fadeIn"
+              aria-labelledby="navbarDropdown"
+            >
+              <a class="dropdown-item" href="about.html#goals">رسالة المعهد</a>
+              <a class="dropdown-item" href="about.html#vision">رؤية المعهد</a>
+            </div>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item ml-4">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+   
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item en ml-4">
+              <a class="nav-link" href="en.html">icon</a>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </nav>
+    <div style="padding-top: 61px;">
     <div id="mySidenav" class="sidenav">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
+      <ul>
+        <li class="active"><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
 
     <div id="main">
       <h2>TEST</h2>
       <h1>ONE MORE LINE</h1>
-      <span style="font-size: 30px; cursor: pointer;" onclick="toggleNav()"
-        >&#9776; open</span
-      >
     </div>
+
+  </div>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
   direction: rtl;
@@ -9,19 +14,31 @@ body {
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 0;
+  /* top: 0; */
   right: 0;
-  background-color: #111;
+  background-color: #1e2129;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
+.sidenav li:hover {
+  background-color: #2d323e;
+  margin-left: 1.2rem;
+  border-radius: 25px 0 0 25px;
+  transition: all 500ms ease;
+}
+
+.sidenav .active {
+  background-color: #039be5;
+  margin-left: 1.2rem;
+  border-radius: 25px 0 0 25px;
+}
 
 .sidenav a {
-  padding: 8px 32px 8px 8px;
+  padding: 6px 32px 6px 8px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #fff;
   display: block;
   transition: 0.3s;
 }
