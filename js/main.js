@@ -9,12 +9,12 @@ const toggleNav = () => {
     document.getElementById("main").style.marginRight = "250px";
   }
 };
-// submenu
+// Sidenav Submenu
 $(".sidenav li a").click(function () {
   $(this).parent().toggleClass("active-sub");
 });
 
-// active class
+// Sidenav  Active Item
 $(".sidenav a").on("click", function () {
   $(".sidenav").find("li.active").removeClass("active");
   $(this).parent("li").addClass("active");

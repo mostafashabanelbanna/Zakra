@@ -107,3 +107,25 @@ input:focus {
     font-size: 18px;
   }
 }
+/*  */
+/*  */
+/*  */
+
+/* Main Content */
+.group {
+  position: relative;
+}
+.group > label {
+  padding: 0 0.2em;
+  position: absolute;
+  top: -0.5em;
+  right: 1em;
+  background-color: white;
+}
+
+.group > input {
+  padding: 0.8em;
+  border-radius: 0.5em;
+  border: 2px solid lightblue;
+  outline: none;
+}
