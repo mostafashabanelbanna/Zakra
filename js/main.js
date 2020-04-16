@@ -1,6 +1,6 @@
 // Sidenav Toggler
-function toggleNav() {
-  var Sidenav = document.getElementById("mySidenav");
+const toggleNav = () => {
+  let Sidenav = document.getElementById("mySidenav");
   if (Sidenav.style.width === "250px") {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginRight = "0";
@@ -8,4 +8,14 @@ function toggleNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("main").style.marginRight = "250px";
   }
-}
+};
+// submenu
+$(".sidenav li a").click(function () {
+  $(this).parent().toggleClass("active-sub");
+});
+
+// active class
+$(".sidenav a").on("click", function () {
+  $(".sidenav").find("li.active").removeClass("active");
+  $(this).parent("li").addClass("active");
+});

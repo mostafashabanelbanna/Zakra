@@ -12,13 +12,14 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <span style="font-size: 30px; cursor: pointer;" onclick="toggleNav()"
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+      <span class="sidnav-btn" onclick="toggleNav()"
         >&#9776;</span
       >
       <a class="navbar-brand" href="index.html"
-        ><img src="images/brand-logo.png" class="brand-logo" alt="brand-logo"
-      /></a>
+        ><img src="images/Blank.png" class="brand-logo" alt="brand-logo"
+      />O</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -32,50 +33,7 @@
       </button>
 
       <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto ">
-          <li class="nav-item dropdown ml-4  active">
-            <a
-              class="nav-link "
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              الرئيسية
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right animated fadeIn"
-              aria-labelledby="navbarDropdown"
-            >
-              <a class="dropdown-item" href="#news">الأخبار</a>
-              <a class="dropdown-item" href="#notifications">تنويهات و إعلانات</a>
-              <a class="dropdown-item" href="#activities">أنشطة المعهد</a>
-              <a class="dropdown-item" href="#videos">الصور والفيدوهات</a>
-              <a class="dropdown-item" href="#links">روابط ذات صلة</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown ml-4">
-            <a
-              class="nav-link "
-              href="index.html"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              من نحن
-            </a>
-            <div
-              class="dropdown-menu dropdown-menu-right animated fadeIn"
-              aria-labelledby="navbarDropdown"
-            >
-              <a class="dropdown-item" href="about.html#goals">رسالة المعهد</a>
-              <a class="dropdown-item" href="about.html#vision">رؤية المعهد</a>
-            </div>
-          </li>
+        <ul class="navbar-nav ml-auto">     
           <li class="nav-item ml-4">
             <a class="nav-link" href="#">Link</a>
           </li>
@@ -87,31 +45,42 @@
           </li>
    
         </ul>
-        <div class="form-inline my-2 my-lg-0">
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item en ml-4">
-              <a class="nav-link" href="en.html">icon</a>
-            </li>
-          </ul>
-        </form>
+        <div class="input-group col-md-2">
+          <input class="form-control py-2 border-left-0 border" type="search" placeholder="بحث" id="example-search-input">
+          <span class="input-group-append">
+            <button class="btn btn-outline-secondary border-right-0 border" type="button">
+                  <i class="fa fa-search"></i>
+            </button>
+          </span>
+      </div>
+        
       </div>
     </nav>
+    <!-- Navbar End -->
+
+    <!-- Sidenav Start-->
     <div style="padding-top: 61px;">
-    <div id="mySidenav" class="sidenav">
-      <ul>
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
+      <div id="mySidenav" class="sidenav">
+        <ul>
+          <li class="active "><a href="#">الرئيسية</a></li>
+          <li><a href="#">رئيسي</a>
+            <ul class="sub-menu">
+              <li class=""><a   href="#/web">فرعي</span></a></li>
+              <li class=""><a  href="#/social">فرعي2</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Clients</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
 
-    <div id="main">
-      <h2>TEST</h2>
-      <h1>ONE MORE LINE</h1>
+      <div id="main">
+        <h2>TEST</h2>
+        <h1>ONE MORE LINE</h1>
+      </div>
     </div>
+    <!-- Sidenav Start-->
 
-  </div>
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -119,6 +88,11 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/8959f1e496.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/main.js"></script>
 
     <script></script>
