@@ -19,3 +19,14 @@ $(".sidenav a").on("click", function () {
   $(".sidenav").find("li.active").removeClass("active");
   $(this).parent("li").addClass("active");
 });
+
+//Input focus
+$(".group > input").on({
+  focus: function () {
+    $("label[for='" + $(this).attr("id") + "']").addClass("focused");
+  },
+
+  blur: function () {
+    $("label[for='" + $(this).attr("id") + "']").removeClass("focused");
+  },
+});

@@ -20,7 +20,7 @@
       <a class="navbar-brand" href="index.html"
         ><img src="images/Blank.png" class="brand-logo" alt="brand-logo"
       />O</a>
-      <button
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -30,31 +30,25 @@
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
-      </button>
+      </button> -->
 
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <!-- <div class="collapse navbar-collapse " id="navbarSupportedContent"> -->
         <ul class="navbar-nav ml-auto">     
-          <li class="nav-item ml-4">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item ml-4">
-            <a class="nav-link" href="#">Link</a>
-          </li>
           <li class="nav-item ml-4">
             <a class="nav-link" href="#">Link</a>
           </li>
    
         </ul>
-        <div class="input-group col-md-2">
+        <div class="input-group " style="width: 150px;">
           <input class="form-control py-2 border-left-0 border" type="search" placeholder="بحث" id="example-search-input">
           <span class="input-group-append">
             <button class="btn btn-outline-secondary border-right-0 border" type="button">
                   <i class="fa fa-search"></i>
             </button>
           </span>
-      </div>
+        </div>
         
-      </div>
+      <!-- </div> -->
     </nav>
     <!-- Navbar End -->
 
@@ -77,17 +71,17 @@
 
        <!-- Main Content Start -->
       <div id="main">
-        <form style="width: 35%;">
-          <div class="form-group group" >
-            <label>الاسم</label>
-            <input type="email" class="form-control filter" id="exampleInputEmail1"  aria-describedby="emailHelp">
+        <form>
+          <div class="form-group group col-lg-4 col-md-6" >
+            <label for="name">الاسم</label>
+            <input type="text" class="form-control " id="name"  aria-describedby="emailHelp">
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+          <div class="form-group group col-lg-4 col-md-6" >
+            <label for="address">العنوان</label>
+            <input type="text" class="form-control" id="address"  aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
